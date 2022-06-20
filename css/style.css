@@ -1,0 +1,358 @@
+/* Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif, fantasy;
+  background: #000;
+  color: #999;
+}
+
+/* Container */
+.container {
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+/* Button */
+.btn {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.4rem 1.4rem;
+  cursor: pointer;
+  background: #ff0000;
+  border: none;
+  outline: none;
+  transition: opacity 0.2s ease-in;
+  border-radius: 2px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btnRound {
+  border-radius: 5px;
+}
+
+.btnXl {
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 1.5rem 2.1rem;
+}
+
+.btnLg{
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 1.2rem 1.5rem;
+}
+
+/* Text Styles */
+.textLg{
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+}
+
+.textMd{
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.textCenter{
+  text-align: center;
+}
+
+/* Showcase */
+.showcase {
+  height: 93vh;
+  width: 100%;
+  position: relative;
+  background: url("https://i.ibb.co/vXqDmnh/background.jpg") no-repeat center center/cover;
+}
+
+.showcase::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+}
+
+.showcaseTop {
+  z-index: 2;
+  position: relative;
+  height: 90px;
+}
+
+.showcaseTop img {
+  width: 170px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.showcaseTop a {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.showcaseContent {
+  position: relative;
+  margin: auto;
+  z-index: 2;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 9vh;
+}
+
+.showcaseContent h1 {
+  font-weight: 700;
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  color: #fff;
+}
+
+.showcaseContent p {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 2rem 0;
+  font-size: 1.9rem;
+  color: #fff;
+}
+
+/* Tabs */
+.tabs {
+  background: #141414;
+  padding-top: 1rem;
+  border-bottom: 3px solid #3d3d3d;
+}
+
+.tabs .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.tabs .container>div {
+  padding: 1.5rem 0;
+}
+
+.tabs .container :hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.tabs .container p {
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
+}
+
+.tabBorder{
+  border-bottom: 3px solid #ff0000;
+}
+
+/* Tab contents */
+
+.tabContent{
+  color: #fff;
+  margin-top: 1.5rem;
+}
+
+#tab1Content,
+#tab2Content,
+#tab3Content {
+  display: none;
+}
+
+.show {
+  display:block !important;
+}
+
+#tab1Content .tab1ContentItem{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#tab2Content .tab2ContentTop {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#tab2Content .tab2ContentBottom{
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-gap: 1rem;
+  align-items: justify;
+  text-align: center;
+  justify-content: center;
+}
+
+#tab3Content table{
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#tab3Content table thead tr th{
+  text-transform: uppercase;
+  padding: 0.8rem;
+}
+
+#tab3Content table tbody tr td{
+  color: #999;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+}
+
+#tab3Content table tbody tr td:first-child{
+  text-align: left;
+}
+
+#tab3Content table tbody tr:nth-child(odd){
+  background:#222;
+}
+
+/* Footer */
+
+.mainFooter{
+  max-width: 75%;
+  margin: 1rem auto;
+  overflow: auto;
+  background: #000;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.mainFooter a{
+  font-size: 0.9rem;
+}
+
+.mainFooter p{
+  margin-bottom: 1.5rem;
+}
+
+.footerCols{
+  display: grid;
+  grid-template-columns: repeat(4 , 1fr);
+  grid-gap: 2rem;
+}
+
+.mainFooter li{
+  line-height: 1.9;
+}
+
+/* Media Queries */
+
+@media (max-width: 960px) {
+  .showcase{
+    height: 70vh;
+  }
+
+  .hideEm{
+    display: none;
+  }
+
+  .mainFooter .footerCols{
+    grid-template-columns: repeat(2 , 1fr);
+  }
+  .showcaseTop img{
+    top: 30%;
+    left: 5%;
+    transform: translate(0);
+  }
+
+  .showcaseContent h1{
+    font-size: 3.7rem;
+    line-height: 1;
+  }
+
+  .showcaseContent p{
+    font-size: 1.5rem;
+  }
+  .btnXl{
+    font-size: 1.5rem;
+    padding: 1.4rem 2rem;
+  }
+
+  .textLg{
+    font-size: 1.3rem;
+  }
+  .textMd{
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .showcase::after{
+    box-shadow: inset 80px 60px 250px #000000, inset -80px -60px 250px #000000;
+  }
+
+  #tab1Content .tab1ContentItem{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  #tab2Content .tab2ContentTop{
+    display: block;
+    text-align: center;
+  }
+
+  #tab2Content .tab2ContentBottom{
+    grid-template-columns: 1fr;
+  }
+}
