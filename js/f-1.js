@@ -2,7 +2,7 @@
 var loader = document.getElementById("preloader");
 
 window.addEventListener("load" , function(){
-  loader.style.display = "";
+  loader.style.display = "none";
 })
 
 
