@@ -1,16 +1,10 @@
 
-$(window).on("load", function(){
-  $(".preloader").fadeOut("slow");
-})
+var loader = document.getElementById("preloader");
 
-//
-// var loader = document.getElementById("preloader");
-//
-// window.addEventListener("load" , function(){
-//   loader.style.display = "none";
-// })
-//
-//
+window.addEventListener("load" , setTimeout(function(){
+  loader.style.display = "none";
+}, 3000))
+
 
 // function(){
 //   loader.style.display = "none";
