@@ -1,10 +1,17 @@
-var loader = document.getElementById("preloader");
-var mainContent = document.getElementById("main-content");
+window.onload = function () {
+  const preloader = document.getElementById("preloader");
+  const mainContent = document.getElementById("main-content");
 
-window.addEventListener(
-  "load",
   setTimeout(function () {
-    loader.style.display = "none";
+    preloader.style.display = "none";
     mainContent.style.display = "block";
-  }, 6000)
-);
+  }, 6000);
+};
+
+setTimeout(function () {
+  const preloader = document.getElementById("preloader");
+  const mainContent = document.getElementById("main-content");
+
+  preloader.style.display = "none";
+  mainContent.style.display = "block";
+}, 10000);
