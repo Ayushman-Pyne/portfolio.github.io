@@ -1,0 +1,224 @@
+:root {
+  --uranian-blue: #c6ddf5;
+  --uranian-blue-light: #ddebf9;
+  --uranian-blue-font: #f4f8fd;
+  --outer-space: #36494eff;
+  --black: #000000;
+  --paynes-gray: #597081ff;
+  --orange: #ffa500;
+  --orange-red: #ff4500;
+}
+
+body {
+  margin: 0px;
+  background-color: var(--uranian-blue-light);
+}
+
+/* Link styles */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--orange);
+}
+
+/* Class Styles */
+
+.active {
+  color: var(--orange-red);
+}
+
+.block {
+  height: 600px;
+}
+
+/* Header and Footer */
+
+header {
+  background-color: var(--outer-space);
+  color: var(--uranian-blue-font);
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+header nav ul li {
+  list-style-type: none;
+  display: inline;
+  text-align: center;
+  margin-right: 20px;
+}
+
+header .logo img {
+  height: auto;
+  width: 100%;
+  max-width: 100px;
+}
+
+header a {
+  color: var(--uranian-blue-font);
+}
+
+footer {
+  font-size: 1.2rem;
+  padding: 20px;
+  background-color: var(--paynes-gray);
+  color: var(--uranian-blue-font);
+}
+
+/* Home Page Styles */
+
+.home {
+  color: var(--black);
+  font-size: 1.25rem;
+}
+
+.home h2 {
+  color: var(--orange-red);
+}
+
+.home img {
+  width: 100%;
+  height: auto;
+}
+
+/* Academics Styles */
+
+.academics-content {
+  padding-top: 3rem;
+  padding-left: 2rem;
+  font-size: 1.2rem;
+}
+
+.academics-content ol li {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.academics-content ol li ul li {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+/* Admission Form Styles */
+
+.admission {
+  background-color: var(--uranian-blue);
+  margin: 40px 20%;
+  display: grid;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.admission form {
+  border: var(--outer-space) 2px solid;
+  border-bottom: var(--outer-space) 4px solid;
+  border-right: var(--outer-space) 4px solid;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.admission h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.admission form div {
+  margin-bottom: 15px;
+}
+
+.admission form div label {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.admission form div input {
+  width: 100%;
+  font-size: 1.25rem;
+  border: 0;
+  border-bottom: var(--black) 1px solid;
+  background-color: transparent;
+}
+
+.admission form input:focus,
+.admission form input:focus-visible {
+  outline: none;
+  border: var(--black) 1px solid;
+  border-top: none;
+}
+
+.admission form button {
+  font-size: 1.25rem;
+  color: var(--black);
+  background-color: var(--orange-red);
+  border: none;
+  border-bottom: var(--black) 1px solid;
+  border-right: var(--black) 1px solid;
+  border-radius: 15px;
+  padding: 10px 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.admission form button:hover {
+  background-color: var(--orange);
+}
+
+/* Gallery Styles */
+
+.gallery {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.gallery :nth-child(1),
+.gallery :nth-child(2),
+.gallery :nth-child(4),
+.gallery :nth-child(5) {
+  width: 49%;
+}
+
+.gallery :nth-child(3),
+.gallery :nth-child(6) {
+  width: 100%;
+}
+
+/* Contact Us Form */
+
+.contact {
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+  border-radius: 15px;
+  font-size: large;
+}
+
+.contact div {
+  width: 30%;
+  padding: 20px;
+  background-color: var(--uranian-blue);
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 20px;
+  word-wrap: break-word;
+}
+
+.contact div svg {
+  height: 4rem;
+}
+
+.contact div a {
+  color: var(--black);
+}

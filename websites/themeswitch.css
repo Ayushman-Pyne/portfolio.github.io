@@ -1,0 +1,100 @@
+:root {
+  --duration: 500ms;
+  --delay: 100ms;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+}
+
+.theme-light {
+  background: #c2e1f4;
+}
+
+.theme-dark {
+  background: #172127;
+}
+
+#Moon,
+#Sun {
+  transform-origin: 50% 50%;
+  transition: all 0.5s ease;
+}
+
+.theme-light #Moon {
+  transform: scale(0.5) rotate(90deg);
+  opacity: 0;
+}
+
+.theme-dark #Sun {
+  opacity: 0;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.outer-circle {
+  transition-duration: var(--duration);
+}
+
+.theme-light #N {
+  transition-delay: 0;
+}
+
+.theme-light #NE {
+  transition-delay: calc(var(--delay) * 1);
+}
+
+.theme-light #SE {
+  transition-delay: calc(var(--delay) * 2);
+}
+
+.theme-light #S {
+  transition-delay: calc(var(--delay) * 3);
+}
+
+.theme-light #SW {
+  transition-delay: calc(var(--delay) * 4);
+}
+
+.theme-light #W {
+  transition-delay: calc(var(--delay) * 5);
+}
+
+.theme-light #NW {
+  transition-delay: calc(var(--delay) * 6);
+}
+
+.theme-dark #N {
+  transform: translate(0, 10px);
+}
+
+.theme-dark #NE {
+  transform: translate(-10px, 5px);
+}
+
+.theme-dark #SE {
+  transform: translate(-10px, -5px);
+}
+
+.theme-dark #S {
+  transform: translate(0px, -10px);
+}
+
+.theme-dark #SW {
+  transform: translate(10px, -5px);
+}
+
+.theme-dark #W {
+  transform: translate(10px, 0px);
+}
+
+.theme-dark #NW {
+  transform: translate(10px, 5px);
+}

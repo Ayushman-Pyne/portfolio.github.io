@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arceus | CSS Start</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<style type="text/css">
+		.style-tag{
+			background: Blue;
+			color: Yellow;
+		}
+		dt{
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS</h1>
+	<h3>CSS stands for Cascading Style Sheet.</h3>
+	<p>There are Different Ways to add css to a block </p>
+	<dl>
+		<dt style="color: Blue; background: Yellow;">
+			Inline Css
+
+		</dt>
+		<dd>To use Inline CSS, you have to use the <span style="color: LimeGreen;">style</span> attribute in the tag you want to add styling to.</dd>
+		<dt class="external-css">
+			Link to External File
+		</dt>
+		<dd>To link to an external CSS file you have to use the <span style="color: LimeGreen;">link</span> tag and rel attribute set to <span style="color: LimeGreen;">stylesheet</span> href attribute to refer to the .css file that has all the styles. </dd>
+		<dt class="style-tag">
+			Using the Style tag
+		</dt>
+		<dd>You can also add styles to an element using the <span style="color: LimeGreen;">style</span> tag under the head tag. All the styles are added inside the style tag.</dd>
+	</dl>
+	<h3>There are 3 ways to reference to an element/ point to which element need to be styled.</h3>
+	<dl>
+		<dt>Calling using the tag name.</dt>
+		<dd>Tag names can be directly called to change their styles. Like if u open the file here. <a href="../style.css">Master CSS</a>, you will find that there are style for the body tag that changes it's color to <span style="color: AliceBlue; background: Indigo;">AliceBlue</span>  and some other styling discussed later.</dd>
+		<dt>Referencing using class</dt>
+		<dd>An Element can be referenced using the class atttribute.</dd>
+		<dt>Refrencing using ID</dt>
+		<dd> An element can be referenced using an Id attribute. An Id is unique whereas a class can be used to apply the same styles to different elements.</dd>
+	</dl>
+	 <a href="../index.html">Click to go the Main page</a>
+</body>
+</html>
