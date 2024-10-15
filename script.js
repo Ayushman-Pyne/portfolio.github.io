@@ -14,4 +14,4 @@ setTimeout(function () {
 
   preloader.style.display = "none";
   mainContent.style.display = "block";
-}, 10000);
+}, 12000);
