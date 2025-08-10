@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1 id="title">Arceus Survey Form</h1>
+    <p id="description">Fill in the details about who you are.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name: <input type="text" name="name" id="name" placeholder="Enter Your Name." required></label>
+        <label id="email-label" for="email">Email: <input type="email" name="email" id="email" placeholder="Enter Your Email." required></label>
+        <label id="number-label" for="number">Number: <input type="number" name="number" id="number" min="9" max="12" placeholder="Enter Your Number." required></label>
+      </fieldset>
+      <fieldset>
+        <legend>Choose Your Weapon:</legend>
+        <select id="dropdown" name="weapon-choose">
+          <option value="0">Select any one</option>
+          <option value="1">Sword</option>
+          <option value="2">Bow & Arrow</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Choose Your Playstyle:</legend>
+        <label for="playstyle"><input type="radio" name="playstyle" id="playstyle" value="Offensive" checked> Offensive</label>
+        <label for="playstyle"><input type="radio" name="playstyle" id="playstyle" value="Defensive"> Defensive</label>
+      </fieldset>
+      <fieldset>
+        <legend>Choose Your Armor:</legend>
+        <label for="armor"><input type="checkbox" name="leather-armor" value="leather" checked> Leather Armor</label>
+        <label for="armor"><input type="checkbox" name="iron-armor" value="iron"> Iron Armor</label>
+        <label for="armor"><input type="checkbox" name="gold-armor" value="gold"> Gold Armor</label>
+        <label for="armor"><input type="checkbox" name="diamond-armor" value="diamond"> Diamond Armor</label>
+      </fieldset>
+      <fieldset>
+        <legend>Now at last, a bit bout your character: </legend>
+        <textarea name="bio" rows="5" cols="30" placeholder="I am a soldier from the Arctic regions of North..."></textarea>
+      </fieldset>
+      <input type="submit" id="sub">
+    </form>
+
+  </main>
+</body>
+</html>
