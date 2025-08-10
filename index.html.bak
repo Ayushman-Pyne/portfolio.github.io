@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio | Ayushman Pyne | Home</title>
+  </head>
+  <body>
+    <div id="preloader">
+      <img src="media/preloader.gif" alt="Preloader Animation" />
+    </div>
+    <div id="main-content">
+      <h1 class="test-head">Header 1</h1>
+      <h2 class="test-head">Header 2</h2>
+      <h3 class="test-head">Header 3</h3>
+      <h4 class="test-head">Header 4</h4>
+      <h5 class="test-head">Header 5</h5>
+      <h6 class="test-head">Header 6</h6>
+      <p>This is a Paragraph.</p>
+      <br />
+      <hr />
+      <a href="websites/second.html">click to go to 2nd page</a> <br />
+      <a href="websites/third.html">Click to go to 3rd page</a>
+      <h4 class="ques">
+        create a webpage containing title = marks,the biggest heading = HS
+        marks, page color should be yellow, write down all your marks line by
+        line.
+      </h4>
+      <a href="websites/marks.html"> Click to go to marks.html </a>
+      <h4 class="ques">Sample Table</h4>
+      <a href="websites/table.html"> Click to go to the table page </a>
+      <h4 class="ques">Sample Images</h4>
+      <a href="websites/images.html"> Click to go to the images page </a>
+      <h4 class="ques">Travel Images</h4>
+      <a href="websites/tRAVEL/main.html">
+        Click to go to travel images page
+      </a>
+      <h4 class="ques">Cool Text Animation CSS</h4>
+      <a href="websites/cooltext.html">
+        Click here to view Cool Text Animation.
+      </a>
+      <h4 class="ques">Cool Theme Switcher Animation</h4>
+      <a href="websites/themeswitch.html">
+        Click here to go to cool Theme Switcher animation.
+      </a>
+      <h4 class="hw">Python Programs jupyter export</h4>
+      <a href="websites/python programs 20240911.html">
+        Click here to go to Python Programs Jupyter Export.
+      </a>
+      <h4 class="ques">Form Sample</h4>
+      <a href="websites/form.html"> Click here to go to a sample Form Page. </a>
+      <h4 class="ques">CSS Introduction</h4>
+      <a href="websites/css.html"> Click here to go to basic CSS. </a>
+      <h4 class="ques">Sample CSS practice page</h4>
+      <a href="websites/ok.html">
+        Click here to go to the sample CSS practice page.
+      </a>
+      <h4 class="hw">Assignment 20241009</h4>
+      <a href="websites/Assignment 20241008/home.html">
+        Click here to go to the Assignment 20241008.
+      </a>
+      <h4 class="hw">Freecodecamp Responsive Web Design 1st Assignment </h4>
+      <a href="websites/freecodecamp-responsive-web-design/index.html">
+        Click here to go to the Freecodecamp Responsive Web Design 1st Assignment.
+      </a>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

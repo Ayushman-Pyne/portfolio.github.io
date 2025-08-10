@@ -8,64 +8,68 @@
     <title>Portfolio | Ayushman Pyne | Home</title>
   </head>
   <body>
-    <div id="preloader">
-      <img src="media/preloader.gif" alt="Preloader Animation" />
-    </div>
     <div id="main-content">
-      <h1 class="test-head">Header 1</h1>
-      <h2 class="test-head">Header 2</h2>
-      <h3 class="test-head">Header 3</h3>
-      <h4 class="test-head">Header 4</h4>
-      <h5 class="test-head">Header 5</h5>
-      <h6 class="test-head">Header 6</h6>
-      <p>This is a Paragraph.</p>
-      <br />
-      <hr />
-      <a href="websites/second.html">click to go to 2nd page</a> <br />
-      <a href="websites/third.html">Click to go to 3rd page</a>
-      <h4 class="ques">
-        create a webpage containing title = marks,the biggest heading = HS
-        marks, page color should be yellow, write down all your marks line by
-        line.
-      </h4>
-      <a href="websites/marks.html"> Click to go to marks.html </a>
-      <h4 class="ques">Sample Table</h4>
-      <a href="websites/table.html"> Click to go to the table page </a>
-      <h4 class="ques">Sample Images</h4>
-      <a href="websites/images.html"> Click to go to the images page </a>
-      <h4 class="ques">Travel Images</h4>
-      <a href="websites/tRAVEL/main.html">
-        Click to go to travel images page
-      </a>
-      <h4 class="ques">Cool Text Animation CSS</h4>
-      <a href="websites/cooltext.html">
-        Click here to view Cool Text Animation.
-      </a>
-      <h4 class="ques">Cool Theme Switcher Animation</h4>
-      <a href="websites/themeswitch.html">
-        Click here to go to cool Theme Switcher animation.
-      </a>
-      <h4 class="hw">Python Programs jupyter export</h4>
-      <a href="websites/python programs 20240911.html">
-        Click here to go to Python Programs Jupyter Export.
-      </a>
-      <h4 class="ques">Form Sample</h4>
-      <a href="websites/form.html"> Click here to go to a sample Form Page. </a>
-      <h4 class="ques">CSS Introduction</h4>
-      <a href="websites/css.html"> Click here to go to basic CSS. </a>
-      <h4 class="ques">Sample CSS practice page</h4>
-      <a href="websites/ok.html">
-        Click here to go to the sample CSS practice page.
-      </a>
-      <h4 class="hw">Assignment 20241009</h4>
-      <a href="websites/Assignment 20241008/home.html">
-        Click here to go to the Assignment 20241008.
-      </a>
-      <h4 class="hw">Freecodecamp Responsive Web Design 1st Assignment </h4>
-      <a href="websites/freecodecamp-responsive-web-design/index.html">
-        Click here to go to the Freecodecamp Responsive Web Design 1st Assignment.
-      </a>
+  <header class="header">
+    <div class="header-content">
+      <h1 class="main-title">Ayushman Pyne</h1>
+      <p class="subtitle">Full Stack Developer & Student</p>
+      <p class="header-description">
+        Welcome to my portfolio showcasing various web development projects, 
+        programming assignments, and creative experiments.
+      </p>
     </div>
-    <script type="text/javascript" src="script.js"></script>
+  </header>
+
+  <section class="projects-section">
+    <div class="container">
+      <h2 class="section-title">My Projects</h2>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <span class="category-badge sample">Sample</span>
+          <h3 class="project-title">HS Marks Display</h3>
+          <p class="project-description">A webpage displaying high school marks with custom yellow styling and organized layout.</p>
+          <a href="websites/marks.html" class="project-link">View Project →</a>
+        </div>
+
+        <div class="project-card">
+          <span class="category-badge sample">Table</span>
+          <h3 class="project-title">Sample Table</h3>
+          <p class="project-description">Demonstration of HTML table structures with proper formatting and styling.</p>
+          <a href="websites/table.html" class="project-link">View Project →</a>
+        </div>
+
+        <div class="project-card">
+          <span class="category-badge animation">Animation</span>
+          <h3 class="project-title">Cool Text Animation</h3>
+          <p class="project-description">Creative CSS text animations showcasing modern web animation techniques.</p>
+          <a href="websites/cooltext.html" class="project-link">View Project →</a>
+        </div>
+
+        <div class="project-card">
+          <span class="category-badge animation">Theme</span>
+          <h3 class="project-title">Theme Switcher</h3>
+          <p class="project-description">Interactive theme switching animation with smooth transitions and modern UI.</p>
+          <a href="websites/themeswitch.html" class="project-link">View Project →</a>
+        </div>
+
+        <div class="project-card">
+          <span class="category-badge hw">Assignment</span>
+          <h3 class="project-title">Python Programs</h3>
+          <p class="project-description">Collection of Python programming exercises exported from Jupyter notebooks.</p>
+          <a href="websites/python programs 20240911.html" class="project-link">View Project →</a>
+        </div>
+
+        <div class="project-card">
+          <span class="category-badge hw">Assignment</span>
+          <h3 class="project-title">Assignment 20241009</h3>
+          <p class="project-description">Latest web development assignment showcasing HTML, CSS, and JavaScript skills.</p>
+          <a href="websites/Assignment 20241008/home.html" class="project-link">View Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<script src="script.js"></script>
   </body>
 </html>
