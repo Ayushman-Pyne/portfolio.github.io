@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #121212 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: none;
+}
+
+#cursor{
+    --cursor-size: 40px;
+    height: var(--cursor-size);
+    width: var(--cursor-size);
+    border: 1px solid white;
+    border-radius: 100%;
+    top: calc(var(--cursor-size)/2 * -1);
+    left:calc(var(--cursor-size)/2 * -1);
+    position: fixed;
+    z-index: 10;
+}
+
+#image{
+    box-shadow: rgba(138, 134, 134, 0.25) 0px 14px 28px, rgba(138, 134, 134, 0.22) 0px 10px 10px;
+}
