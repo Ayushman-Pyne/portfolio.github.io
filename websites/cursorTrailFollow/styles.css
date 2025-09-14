@@ -1,0 +1,43 @@
+:root{
+    --bg-color: #121212;
+    --cursor-size:25px;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--bg-color) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: none;
+}
+
+
+#cursor{
+    display: block;
+    mix-blend-mode: difference;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+
+#cursor .circle{
+    display: block;
+    height: var(--cursor-size);
+    width: var(--cursor-size);
+    border-radius: 100%;
+    top: calc(var(--cursor-size)/2 * -1);
+    left:calc(var(--cursor-size)/2 * -1);
+    position:absolute;
+    background-color: var(--bg-color);
+}
+
+#image{
+    box-shadow: rgba(138, 134, 134, 0.25) 0px 14px 28px, rgba(138, 134, 134, 0.22) 0px 10px 10px;
+}

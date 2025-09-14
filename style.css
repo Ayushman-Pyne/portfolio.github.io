@@ -435,6 +435,15 @@ body {
   overflow: hidden;
 }
 
+.project-image iframe {
+  position: absolute;
+  width: 100%;
+  top: -50px; /* adjust to center vertically */
+  left: 50%;
+  transform: translateX(-50%);
+  overflow:hidden;
+}
+
 .project-image::before {
   content: '';
   position: absolute;
